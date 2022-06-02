@@ -22,10 +22,11 @@
 
 
 	<?php 
-	$result = $DB->prepare('SELECT * 
-							FROM categories
-							ORDER BY RAND()
-							LIMIT 20');
+	$result = $DB->prepare('SELECT categories.*, COUNT(*) AS total
+							FROM posts, categories
+							WHERE posts.category_id = categories.category_id
+							GROUP BY posts.category_id
+							ORDER BY RAND()');
 	$result->execute();
 	if( $result->rowCount() ){ ?>
 		<section class="categories">
@@ -34,7 +35,7 @@
 				<?php 
 				while( $row = $result->fetch() ){
 					extract($row);
-					echo "<li>$name</li>";
+					echo "<li>$name ($total)</li>";
 				 } 
 				?>
 			</ul>

@@ -51,8 +51,10 @@ require('includes/header.php');
 	<?php 
 			include('includes/comments.php');
 			//only show the comment form if this post has comments enabled
-			if($allow_comments){
+			if( $allow_comments ){
 				include( 'includes/comment-form.php' );
+			}else{
+				echo '<div class="message">Comments Closed.</div>';
 			}
 		} //endwhile
 	}else{

@@ -1,6 +1,8 @@
 TODO
 ====
 
+* make the "new post" page and parser
+* make the edit post page
 
 * write the TOS
 * make the default profile pic show up in the sidebar (and everywhere needed)
@@ -23,3 +25,4 @@ DONE
 * make logout
 * make comments work with the logged in person
 * make the user profile template
+* make the "new post" page and parser

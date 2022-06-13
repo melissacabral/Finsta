@@ -33,7 +33,7 @@ $logged_in_user = check_login(); ?>
 					 echo $logged_in_user['username']; ?>
 				</a>
 			</li>
-			<li><a href="">New Post</a></li>
+			<li><a href="new-post.php">New Post</a></li>
 			<li><a href="login.php?action=logout">Log Out</a></li>
 
 			<?php }else{ ?>

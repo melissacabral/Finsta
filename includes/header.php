@@ -1,3 +1,6 @@
+<?php 
+//check login keys
+$logged_in_user = check_login(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,19 +11,36 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 </head>
 <body>
-	<div class="site">
-		<header class="header">
-			<h1><a href="index.php">Finsta</a></h1>
+<div class="site">
+<header class="header">
+	<h1><a href="index.php">Finsta</a></h1>
 
-			<nav class="main-navigation">
-				<form class="searchform" method="get" action="search.php">
-					<label class="screen-reader-text">Search</label>
-					<input type="search" name="phrase">
-					<input type="submit" value="Search">
-				</form>
+	<nav class="main-navigation">
+		<form class="searchform" method="get" action="search.php">
+			<label class="screen-reader-text">Search</label>
+			<input type="search" name="phrase">
+			<input type="submit" value="Search">
+		</form>
 
-				<ul class="menu">
-					<li><a href="register.php">Sign Up</a></li>
-				</ul>
-			</nav>
-		</header>	
+		<ul class="menu">
+			<?php 
+			if($logged_in_user){ 
+			?>
+			<li class="user">
+				<a href="">
+					<?php 
+					show_profile_pic( $logged_in_user['profile_pic'], $logged_in_user['username'], 30 );
+					 echo $logged_in_user['username']; ?>
+				</a>
+			</li>
+			<li><a href="">New Post</a></li>
+			<li><a href="login.php?action=logout">Log Out</a></li>
+
+			<?php }else{ ?>
+
+			<li><a href="register.php">Sign Up</a></li>
+			<li><a href="login.php">Log In</a></li>
+			<?php } ?>
+		</ul>
+	</nav>
+</header>	

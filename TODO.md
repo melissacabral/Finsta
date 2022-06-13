@@ -1,8 +1,7 @@
 TODO
 ====
 
-* make the login form
-* make the user profile template
+
 * write the TOS
 * make the default profile pic show up in the sidebar (and everywhere needed)
 
@@ -20,3 +19,7 @@ DONE
 * build the search results page
 * add pagination to "flip" through the results
 * make the register form
+* make the login form
+* make logout
+* make comments work with the logged in person
+* make the user profile template

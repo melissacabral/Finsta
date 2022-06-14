@@ -1,6 +1,9 @@
 TODO
 ====
 
+* show a user their drafts
+* add a way to delete your own posts
+
 * make the "new post" page and parser
 * make the edit post page
 
@@ -26,3 +29,7 @@ DONE
 * make comments work with the logged in person
 * make the user profile template
 * make the "new post" page and parser
+
+* Build the "edit post" screen (step 2 of adding a new post)
+* display uploaded images throughout the site with a helper function
+* Add an "edit" button to only  the logged in user's posts

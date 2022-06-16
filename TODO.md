@@ -1,6 +1,9 @@
 TODO
 ====
 
+
+* make the likes interface not throw a warning when not logged in
+
 * show a user their drafts
 * add a way to delete your own posts
 
@@ -33,3 +36,7 @@ DONE
 * Build the "edit post" screen (step 2 of adding a new post)
 * display uploaded images throughout the site with a helper function
 * Add an "edit" button to only  the logged in user's posts
+
+* add "likes" table and dummy data
+* display the number of likes on a post
+* make the "heart" interface, handler & JS

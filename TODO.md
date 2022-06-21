@@ -7,11 +7,8 @@ TODO
 * show a user their drafts
 * add a way to delete your own posts
 
-* make the "new post" page and parser
-* make the edit post page
-
 * write the TOS
-* make the default profile pic show up in the sidebar (and everywhere needed)
+
 
 
 DONE
@@ -30,7 +27,7 @@ DONE
 * make the login form
 * make logout
 * make comments work with the logged in person
-* make the user profile template
+* make the default profile pic show up in the sidebar (and everywhere needed)
 * make the "new post" page and parser
 
 * Build the "edit post" screen (step 2 of adding a new post)
@@ -40,3 +37,6 @@ DONE
 * add "likes" table and dummy data
 * display the number of likes on a post
 * make the "heart" interface, handler & JS
+
+* add the profile page
+* add the "follow" and "unfollow" interaction

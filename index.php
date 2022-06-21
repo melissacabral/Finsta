@@ -32,7 +32,9 @@ require('includes/header.php');
 				<?php edit_post_button( $post_id, $user_id ); ?>
 				
 				<span class="author">
+					<a href="profile.php?user_id=<?php echo $user_id; ?>">
 					<?php show_profile_pic($profile_pic, $username, 50); ?>
+					</a>
 					<?php echo $username; ?>
 				</span>
 
